@@ -1,3 +1,7 @@
+NAME : Selvaganesh B
+
+REGISITOR NO : 212224230258
+
 # HALF_ADDER_SUBTRACTOR
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
@@ -35,6 +39,16 @@ Figure -02 HALF Subtractor
 
 **Truthtable**
 
+**Half Adder**
+
+![half add](https://github.com/user-attachments/assets/b7957114-986e-4d81-bda5-ad3e683be51b)
+
+
+**Half Subtractor**
+
+![WhatsApp Image 2025-03-21 at 14 23 18_648c36c2](https://github.com/user-attachments/assets/96b21aeb-1975-4361-85cc-d79725c462df)
+
+
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -50,12 +64,33 @@ Figure -02 HALF Subtractor
 
 **Program:**
 
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+module exe3 (a,b,x,y,c,d,s,w);
 
-Developed by: RegisterNumber:*/
+input a,b,x,y;
+
+output c,d,s,w;
+
+assign s = a^b;
+
+assign c = a&b;
+
+assign d = x^y;
+
+assign w = ~x&y;
+
+endmodule
+
 
 **RTL Schematic**
 
+![Screenshot 2025-03-21 135200](https://github.com/user-attachments/assets/e3bd3658-68ad-41b2-8dad-676cc410b862)
+
+
 **Output/TIMING Waveform**
 
+![Screenshot 2025-03-21 135436](https://github.com/user-attachments/assets/6dbc16c7-819b-4b13-b641-9a1283046926)
+
+
 **Result:**
+
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
